@@ -1,0 +1,203 @@
+/* reinico */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #c3c1c1;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.contenedor-principal {
+    width: 100%;
+    max-width: 750px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.fila-dos-columnas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/* Tarjeta 1 */
+.tarjeta-1 {    
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.globo {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 16px;
+    font-size: 14px;
+    line-height: 1.4;
+    position: relative;
+}
+
+
+.globo p {
+    margin-bottom: 15px;
+}
+
+.globo .resaltado {
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+.perfil {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.persona {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.info h3 {
+    font-size: 16px;
+    color: #1e1e1e;
+}
+
+.info p {
+    font-size: 13px;
+    color: #666666;
+}
+
+/* Tarjeta 2 */
+.tarjeta-2 {
+    border: 1.5px solid #222222;
+    border-radius: 16px;
+    padding: 20px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.tarjeta-2 .texto-testimonio {
+    font-size: 14px;
+    color: #222222;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+/* Tarjeta 3 y foto */
+.contenedor-foto {
+    width: 100%;
+    height: 100%;
+}
+
+.foto-destacada {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.tarjeta-3 {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    padding: 25px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.estrellas {
+    color: #ffcc00;
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.tarjeta-3 h3 {
+    font-size: 20px;
+    margin-bottom: 4px;
+}
+
+.tarjeta-3 .cargo {
+    font-size: 13px;
+    color: #888888;
+    margin-bottom: 15px;
+}
+
+.tarjeta-3 .texto-testimonio {
+    font-size: 14px;
+    line-height: 1.4;
+    color: #dddddd;
+}
+
+/* Tarjeta 4 */
+.tarjeta-4 {
+    border: 1.5px solid #222222;
+    border-radius: 20px;
+    padding: 30px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.texto-carrusel {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #222222;
+    max-width: 600px;
+    margin: 0 auto 25px auto;
+}
+
+.controles-carrusel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.flecha {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333333;
+    cursor: pointer;
+    user-select: none;
+}
+
+.persona-secundaria {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    opacity: 0.4;
+}
+
+.persona-activa {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.nombre-activo {
+    font-size: 14px;
+    font-weight: bold;
+    color: #222222;
+}
+
+@media (max-width: 600px) {
+    .fila-dos-columnas {
+        grid-template-columns: 1fr;
+    }
+}
